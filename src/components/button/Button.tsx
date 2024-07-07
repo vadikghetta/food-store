@@ -1,6 +1,6 @@
 import styles from "./Button.module.scss";
 import clsx from "clsx";
-import { IButtonProps } from "./button.props";
+import { IButtonProps } from "./Button.props";
 
 const Button = ({ children, className, ...props }: IButtonProps) => {
     return (

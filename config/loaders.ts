@@ -74,7 +74,8 @@ export function createLoaders  (options : IWebpackOptions) : ModuleOptions["rule
                       runtime : 'automatic'
                     }
                   }
-              }
+              },
+              
           }
       }
   
