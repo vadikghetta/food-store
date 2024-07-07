@@ -1,8 +1,9 @@
 import "./global.scss";
 import { createRoot } from "react-dom/client";
 import App from "./components/app/App";
-import { store } from './redux/store'
-import { Provider } from 'react-redux'
+import { store } from "./redux/store";
+import { Provider } from "react-redux";
+import { StrictMode } from "react";
 
 
 const rootNode = document.getElementById("store");
@@ -14,10 +15,11 @@ if (!rootNode) {
 }
 
 createRoot(rootNode).render(
-
-    <Provider store={store}>
-        <App />
-    </Provider>
+    <StrictMode>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </StrictMode>
 )
 
 

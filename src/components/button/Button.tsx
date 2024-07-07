@@ -1,11 +1,6 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps, ReactNode } from "react";
 import styles from "./Button.module.scss";
 import clsx from "clsx";
-
-interface IButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> {
-    children: ReactNode
-}
-
+import { IButtonProps } from "./button.props";
 
 const Button = ({ children, className, ...props }: IButtonProps) => {
     return (
