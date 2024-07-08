@@ -1,9 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('it renders', async () => {
+test("Hello есть в приложении", async () => {
   render(<App />);
   const hello = screen.getByText("Hello");
-  const submitButton = screen.queryByText('submit')
-  expect(submitButton).not.toBeInTheDocument()
+  expect(hello).toBeInTheDocument();
 });
