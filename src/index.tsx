@@ -11,15 +11,15 @@ const rootNode = document.getElementById("store");
 
 
 if (!rootNode) {
-    throw new Error("Not found root")
+	throw new Error("Not found root");
 }
 
 createRoot(rootNode).render(
-    <StrictMode>
-        <Provider store={store}>
-            <App />
-        </Provider>
-    </StrictMode>
-)
+	<StrictMode>
+		<Provider store={store}>
+			<App />
+		</Provider>
+	</StrictMode>
+);
 
 

@@ -4,10 +4,10 @@ import { IWebpackOptions } from "../src/types/webpack.types";
 
 
 export function createDevServer  (options : IWebpackOptions): DevServerConfiguration  {
-    return {
-            port : options.port ?? 3000,
-            open : false,
-            historyApiFallback : true,
-            hot : true
-    }
+	return {
+		port : options.port ?? 3000,
+		open : false,
+		historyApiFallback : true,
+		hot : true
+	};
 }

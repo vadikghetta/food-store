@@ -15,7 +15,7 @@ export interface IWebpackOptions  {
     src : string
 }
 
- export interface IEnvVarsType {
+export interface IEnvVarsType {
     mode : TMode
     port : number
     anlizer : boolean
