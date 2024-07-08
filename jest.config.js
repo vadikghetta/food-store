@@ -18,6 +18,6 @@ module.exports = {
         ],
     },
     setupFilesAfterEnv: [
-        "<rootDir>/support/setupTests.js"
+        "<rootDir>/src/setupTests.ts"
     ],
 }
